@@ -1,0 +1,25 @@
+<div id="contact-info">
+    <div class="row">
+        <div class="column">
+            <h4>Contact Info</h4>
+            <mat-divider style="background-color: rgba(255,255,255, 0.2); margin: .5rem 0;"></mat-divider>
+            <div *ngFor="let contact of contacts">
+                <a><span>{{contact.name}}: </span>{{contact.value}}</a>
+            </div>
+        </div>
+        <div class="column">
+            <h4>Links</h4>
+            <mat-divider style="background-color:rgba(255,255,255, 0.2); margin: .5rem 0;"></mat-divider>
+            <div *ngFor="let link of links">
+                <a routerLink="{{link.route}}">{{link.name}}</a>
+            </div>
+        </div>
+        <div class="column">
+            <h4>Social</h4>
+            <mat-divider style="background-color:rgba(255,255,255, 0.2); margin: .5rem 0;"></mat-divider>
+            <div *ngFor="let social of socials">
+                <a target="_blank" href="{{social.link}}">{{social.name}}</a>
+            </div>
+        </div>
+    </div>
+</div>

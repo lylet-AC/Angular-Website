@@ -1,0 +1,32 @@
+<div id="top-bar">
+    <div class="wrapper nav-bar">
+        <div class="title" routerLink="">{{name}}</div>
+        <div class="btn-menu">
+            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
+    </div>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="">
+            <mat-icon>home</mat-icon>
+            <span>Home</span>
+        </button>
+        <button mat-menu-item routerLink="/about-me">
+            <mat-icon>person_outline</mat-icon>
+            <span>About Me</span>
+        </button>
+        <button mat-menu-item routerLink="/projects">
+            <mat-icon>code</mat-icon>
+            <span>Projects</span>
+        </button>
+        <button mat-menu-item routerLink="/blog">
+            <mat-icon>sms</mat-icon>
+            <span>Blog</span>
+        </button>
+        <button mat-menu-item routerLink="/resume">
+            <mat-icon>description</mat-icon>
+            <span>Resumé</span>
+        </button>
+    </mat-menu>
+</div>

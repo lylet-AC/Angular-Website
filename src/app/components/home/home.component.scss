@@ -1,0 +1,21 @@
+#home {
+    padding: 50px 0;
+
+    .mat-stroked-button {
+        margin-right: .5rem;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+
+        .item1 {
+            width: 50%;
+            margin: .25rem;
+        }
+        .item2 {
+            width: 50%;
+            margin: .25rem;
+        }
+    }
+}

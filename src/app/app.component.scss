@@ -1,0 +1,28 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 3.25rem 1fr;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer";
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+    overflow: auto;
+    background-image: url("/assets/img/swirl_pattern.png");
+    .wrapper {
+        height: unset;
+    }
+}
+
+.footer {
+    grid-area: footer;
+    background: #222222;
+}

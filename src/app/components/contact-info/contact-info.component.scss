@@ -1,0 +1,54 @@
+#contact-info {
+    height: 100%;
+    width:100%;
+    color: rgba(151, 151, 151, .69);
+    display: flex;
+    padding: 50px 0px; 
+
+    .row {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-evenly;
+    }
+
+    .column {
+        width: 33.33333%;
+        margin: 0 .5rem;
+        display: block;
+        line-height: 1.5;
+        overflow-wrap: break-word;
+
+        h4 {
+            color: rgba(255,255,255, 0.8);
+            font-size: 1.3em;
+    
+            font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+            font-weight: normal;
+            font-style: normal;
+    
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+    
+            display: block;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+        span {
+            font-weight: bold;
+            color: rgba(255,255,255, 0.3);
+        }
+        a {
+            display: block;
+            color: rgba(255,255,255, 0.6);
+            font-size: 0.8em;
+            text-decoration: none;
+            line-height: inherit;
+            cursor: pointer;
+        }
+        a:hover {
+            color: rgba(255,255,255, 0.8);
+        }
+    }
+
+
+}
