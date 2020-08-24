@@ -1,10 +1,21 @@
 <div id="projects">
     <div class="page-white">
         <h1>Projects</h1>
-        <div *ngFor="let project of projects">
-            <mat-divider style="background-color: rgba(255,255,255, 0.2); margin: .5rem 0 1rem;"></mat-divider>
-            <a target="_blank" href="{{project.link}}"><h4>{{project.title}}</h4></a>
-            <p>{{project.description}}</p>
-        </div>
+        <mat-accordion>
+            <div *ngFor="let project of projects">
+                <mat-divider style="background-color: rgba(255,255,255, 0.2);"></mat-divider>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            {{project.title}}
+                        </mat-panel-title>
+                        <mat-panel-description>
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <mat-divider style="background-color: rgba(255,255,255, 0.2); margin-bottom: .5rem;"></mat-divider>
+                    <p>{{project.description}}  Check out this project <a style="text-decoration: none;" target="_blank" href="{{project.link}}">here <i class="fas fa-external-link-alt"></i></a>.</p>
+                  </mat-expansion-panel>
+            </div>
+          </mat-accordion>
     </div>
 </div>

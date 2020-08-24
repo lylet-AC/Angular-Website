@@ -50,3 +50,39 @@ h1 {
 .space-below {
     margin-bottom: 1rem;
 }
+
+.inline-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px;
+
+    h1 {
+        margin: 0;
+    }
+    h2 {
+        margin: 0;
+    }
+    h3 {
+        margin: 0;
+    }
+    h4 {
+        margin: 0;
+    }
+}
+
+.mat-expansion-panel-body {
+    background: transparent;
+}
+
+.mat-expansion-panel-spacing {
+    margin: 0;
+}
+
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+    box-shadow: none;
+}
+
+.mat-expansion-panel {
+    background: transparent;
+}
