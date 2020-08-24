@@ -12,3 +12,18 @@ export class Social {
     name: string;
     link: string;
 }
+
+export class Project {
+    language: Language;
+    title: string;
+    link: string;
+    description: string;
+}
+
+export enum Language { 
+    Python, 
+    JavaScript,
+    Java,
+    CSharp,
+    Other
+  };
