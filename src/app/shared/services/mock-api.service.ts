@@ -54,6 +54,8 @@ export class MockApiService {
       this.mockedRequests.forEach(request => {
         if (request.route === route && request.method === Method.Get) {
           data.next(request.data);
+          console.log("MockAPIService ~ Requested Route: `" + route + "` for Method: `Get` has Data: ");
+          console.log(request.data);
         }
       });
     });
