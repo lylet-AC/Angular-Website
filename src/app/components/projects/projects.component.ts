@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Project } from 'src/app/shared/entities/entities';
+import { Project, Language } from 'src/app/shared/entities/entities';
 import { MockApiService } from 'src/app/shared/services/mock-api.service';
 
 @Component({
@@ -10,12 +10,14 @@ import { MockApiService } from 'src/app/shared/services/mock-api.service';
 export class ProjectsComponent implements OnInit {
 
   projects: Project[] = [];
+  languages = Language;
 
   constructor(private _apiService: MockApiService) { }
 
   ngOnInit(): void {
     this._apiService.Get("projects").subscribe(data => {
       this.projects = data;
+      console.log(data);
     });
   }
 
