@@ -24,7 +24,6 @@ export class MockApiService {
 
     let links: Link[] =[
       { name: "About Me", route: "/about-me" },
-      { name: "Blog", route: "/blog" },
       { name: "Projects", route: "/projects" },
       { name: "Resumé", route: "/resume" }
     ];

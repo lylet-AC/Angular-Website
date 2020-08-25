@@ -1,7 +1,5 @@
-<div class="grid-container">
-  <header class="header">
-        <app-top-bar></app-top-bar>
-  </header>
+<!-- <div class="grid-container">
+
   <main class="main">
         <div class="wrapper">
             <router-outlet></router-outlet>
@@ -12,4 +10,21 @@
             <app-contact-info></app-contact-info>
       </div>
   </footer>
+</div> -->
+<div class="container">
+      <header class="header">
+            <app-top-bar></app-top-bar>
+      </header>
+
+      <div class="main">
+            <div class="wrapper">
+                  <router-outlet></router-outlet>
+            </div>
+      </div>
+      
+      <footer class="footer">
+            <div class="wrapper">
+                  <app-contact-info></app-contact-info>
+            </div>
+      </footer>
 </div>

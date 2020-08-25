@@ -1,28 +1,56 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 3.25rem 1fr;
-    grid-template-areas:
-      "header header header"
-      "main main main"
-      "footer footer footer";
-    height: 100vh;
-}
+// .grid-container {
+//     display: grid;
+//     grid-template-columns: auto 1fr;
+//     grid-template-rows: 3.25rem 1fr;
+//     grid-template-areas:
+//       "header header header"
+//       "main main main"
+//       "footer footer footer";
+//     height: 100vh;
+// }
+
+// .header {
+//     grid-area: header;
+// }
+
+// .main {
+//     grid-area: main;
+//     overflow: auto;
+//     background-image: url("/assets/img/swirl_pattern.png");
+//     .wrapper {
+//         height: unset;
+//     }
+// }
+
+// .footer {
+//     grid-area: footer;
+//     background: #222222;
+// }
 
 .header {
-    grid-area: header;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
 .main {
-    grid-area: main;
+    flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
     overflow: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     background-image: url("/assets/img/swirl_pattern.png");
     .wrapper {
         height: unset;
     }
 }
-
 .footer {
-    grid-area: footer;
+    flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
     background: #222222;
+    color: white;
 }

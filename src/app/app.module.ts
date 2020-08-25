@@ -14,7 +14,6 @@ import { ContactInfoComponent } from './components/contact-info/contact-info.com
 import { HomeComponent } from './components/home/home.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { BlogComponent } from './components/blog/blog.component';
 import { ResumeComponent } from './components/resume/resume.component';
 
 @NgModule({
@@ -25,7 +24,6 @@ import { ResumeComponent } from './components/resume/resume.component';
     HomeComponent,
     AboutMeComponent,
     ProjectsComponent,
-    BlogComponent,
     ResumeComponent
   ],
   imports: [
