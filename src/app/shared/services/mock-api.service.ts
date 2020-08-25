@@ -31,7 +31,7 @@ export class MockApiService {
 
     let socials: Social[] = [
       { name: "Github", link: "https://github.com/lylet-AC" },
-      { name: "LinkdIn", link: "https://www.linkedin.com/in/tyler-lyle/" },
+      { name: "LinkedIn", link: "https://www.linkedin.com/in/tyler-lyle/" },
       { name: "Twitter", link: "https://twitter.com/lylet_AC"}
     ];
     requests.push({ route: "socials", method: Method.Get, data: socials });
