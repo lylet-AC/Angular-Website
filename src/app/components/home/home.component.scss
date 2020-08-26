@@ -23,3 +23,23 @@
         height: auto;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #home {
+        .row {
+            display: flex;
+            flex-direction: column;
+
+            .item1 {
+                width: unset;
+                margin-right: unset;
+                margin-bottom: 1rem;
+            }
+            .item2 {
+                width: unset;
+                margin-left: unset;
+            }
+        }
+    }
+}
