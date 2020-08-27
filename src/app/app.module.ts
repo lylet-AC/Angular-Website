@@ -6,13 +6,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatStepperModule } from '@angular/material/stepper';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { ContactInfoComponent } from './components/contact-info/contact-info.component';
 import { HomeComponent } from './components/home/home.component';
-import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ResumeComponent } from './components/resume/resume.component';
 
@@ -22,7 +22,6 @@ import { ResumeComponent } from './components/resume/resume.component';
     TopBarComponent,
     ContactInfoComponent,
     HomeComponent,
-    AboutMeComponent,
     ProjectsComponent,
     ResumeComponent
   ],
@@ -35,6 +34,7 @@ import { ResumeComponent } from './components/resume/resume.component';
     MatDividerModule,
     MatButtonModule,
     MatExpansionModule,
+    MatStepperModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
