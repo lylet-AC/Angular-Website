@@ -1,4 +1,63 @@
 #experience {
     padding: 50px 0 10px 0;
 
+    ul {
+        margin-bottom: 0;
+    }
+
+    .experience-container {
+
+        p {
+            margin: 0;
+        }
+
+        .experience-header {
+            display: flex;
+            align-items: center;
+            padding: .5em;
+
+            .experience-logo-container {
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                height: 5em;
+                width: 6em;
+                margin-right: 2em;
+
+                .experience-logo {
+                    align-self: center;
+                    max-height: 5em;
+                    max-width: 6em;
+                }
+            }
+
+            .experience-title {
+                font-size: 1.5em;
+            }
+        }
+
+        .experience-body {
+            padding: 1.5rem;
+            font-weight: 300;
+
+            p {
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+
+            li {
+                line-height: 150%;
+                list-style-type: square;
+                margin-left: 8px;
+            }
+        }
+
+        .experience-footer {
+            display: flex;
+            justify-content: end;
+            font-size: .9em;
+        }
+
+    }
+
 }

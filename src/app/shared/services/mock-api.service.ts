@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Subject, Observable } from 'rxjs';
-import { Contact, Link, Social, Project, Language } from '../entities/entities';
+import { Contact, Link, Social, Project, Language, Experience } from '../entities/entities';
 
 @Injectable({
   providedIn: 'root'
@@ -45,6 +45,15 @@ export class MockApiService {
       { language: Language.JavaScript, title: "Angular Website", link: "https://github.com/lylet-AC/Angular-Website", description: "Angular-Website is a repository that contains the coding for this website. This website is built using Angular and delivered through continuous integrateion to netlify via github." },
     ];
     requests.push({ route: "projects", method: Method.Get, data: projects });
+
+    let experiences: Experience[] = [
+      { imgSrc: "allegheny-college.png", title: "Allegheny College", position: "Bachelor's in C.S.", date: "2015 - 2019", location: "Meadville, PA",
+        accomplishments: ["", "", ""] },
+      { imgSrc: "expivia.png", title: "Expivia Marketing", position: "MIS & Junior Software Developer", date: "August 2019 - Now", location: "Erie, PA",
+        accomplishments: ["", "", ""] },
+    ];
+
+    requests.push({ route: "experiences", method: Method.Get, data: experiences })
 
     return requests;
   }

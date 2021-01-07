@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Experience } from 'src/app/shared/entities/entities';
+import { MockApiService } from 'src/app/shared/services/mock-api.service';
 
 @Component({
   selector: 'app-experience',
@@ -7,10 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
-  constructor() {
+  experiences: Experience[] = [];
+
+  constructor(private _apiService: MockApiService) {
 
   }
 
   ngOnInit(): void {
+    this._apiService.Get("experiences").subscribe(data => {
+      this.experiences = data;
+    })
   }
 }

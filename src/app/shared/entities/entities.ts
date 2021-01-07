@@ -20,10 +20,19 @@ export class Project {
     description: string;
 }
 
+export class Experience {
+    imgSrc: string;
+    title: string;
+    position: string;
+    accomplishments: string[];
+    date: string;
+    location: string;
+}
+
 export enum Language { 
     Python, 
     JavaScript,
     Java,
     CSharp,
     Other
-  };
+};

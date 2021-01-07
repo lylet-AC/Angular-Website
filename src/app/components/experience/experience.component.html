@@ -1,6 +1,29 @@
 <div id="experience">
     <div class="page-white">
-        <h1>Experience</h1>
-        
+        <h1 class="space-below">Experience</h1>
+        <div *ngFor="let experience of experiences"> 
+            <div class="experience-container">
+                <mat-divider style="background-color: rgba(255,255,255, 0.2);"></mat-divider>
+                <div class="experience-header">
+                    <div class="experience-logo-container">
+                        <img class="experience-logo" src="{{'assets/img/' + experience.imgSrc}}"/>
+                    </div>
+                    <div class="experience-header-text">
+                        <p class="experience-title">{{experience.title}}</p>
+                        <p class="experience-position">{{experience.position}}</p>
+                    </div>
+                </div>
+                <mat-divider style="background-color: rgba(255,255,255, 0.2)"></mat-divider>
+                <div class="experience-body">
+                    <p>Accomplishments</p>
+                    <ul>
+                        <li *ngFor="let accomplishment of experience.accomplishments"><span>{{accomplishment}}</span></li>
+                    </ul>
+                </div>
+                <div class="experience-footer space-below">
+                    <p>{{experience.date}} | {{experience.location}}</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
