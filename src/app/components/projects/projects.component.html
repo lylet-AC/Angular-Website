@@ -7,14 +7,15 @@
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <mat-panel-title>
-                            <span>{{project.title}}
+                            <span>
                                 <span class="language-icon">
                                     <span *ngIf="project.language===languages.Python"><i class="fab fa-python"></i></span>
                                     <span *ngIf="project.language===languages.JavaScript"><i class="fab fa-js"></i></span>
                                     <span *ngIf="project.language===languages.Java"><i class="fab fa-java"></i></span>
                                     <span *ngIf="project.language===languages.CSharp"><i class="fab fa-microsoft"></i></span>
                                     <span *ngIf="project.language===languages.Other"><i class="fas fa-code"></i></span>
-                                </span>
+                                </span>  
+                                {{project.title}}
                         </span>
                         </mat-panel-title>
                         <mat-panel-description>

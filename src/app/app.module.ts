@@ -16,6 +16,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
     HomeComponent,
     ExperienceComponent,
     ProjectsComponent,
-    ResumeComponent
+    ResumeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
