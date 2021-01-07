@@ -8,7 +8,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: {title: "Home"} },
-  { path: 'experience', component: ExperienceComponent, data: { title: "Experience" } },
+  //{ path: 'experience', component: ExperienceComponent, data: { title: "Experience" } },
   { path: 'projects', component: ProjectsComponent, data: { title: "Projects" } },
   { path: 'resume', component: ResumeComponent, data: { title: "Resumé"} },
   { path: '**', component: PageNotFoundComponent, data: { title: "404 - Not found" } ,}

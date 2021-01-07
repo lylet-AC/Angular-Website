@@ -5,13 +5,13 @@
     display: flex;
     padding: 50px 0; 
 
-    .row {
+    .contact-row {
         width: 100%;
         display: inline-flex;
         justify-content: space-evenly;
     }
 
-    .column {
+    .contact-column {
         width: 33.33333%;
         margin: 0 .5rem;
         display: block;
@@ -54,12 +54,12 @@
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     #contact-info {
-        .row {
+        .contact-row {
             display: flex;
             flex-direction: column;
             justify-items: center;
         }
-        .column {
+        .contact-column {
             width: 100%;
             margin: 0 .5rem;
             margin-bottom: .5rem;
